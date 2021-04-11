@@ -1,18 +1,18 @@
 import React from 'react'
-import { Link, } from 'react-router-dom'
+import { NavLink , } from 'react-router-dom'
 
 export default function Navigation() {
     return (
         <nav>
             <ul>
                 <li>
-                    <Link to="/">First page</Link>
+                    <NavLink exact activeStyle={{color : 'red'}}  to="/">First page</NavLink >
                 </li>
                 <li>
-                <Link to="/second">Second page</Link>
+                    <NavLink activeStyle={{color : 'red'}}  to="/second">Second page</NavLink >
                 </li>
                 <li>
-                    <Link to="/third">Third page</Link>
+                    <NavLink activeStyle={{color : 'red'}}  to="/third">Third page</NavLink >
                 </li>
             </ul>
         </nav>
